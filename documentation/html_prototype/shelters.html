@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shelter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #bbb">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">UA Animal Shelters 🐾</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animals.html">Animals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shelters.html">Shelters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="databases.html">Databases</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="padding-top: 10px;">
+      <div class="d-grid col-1" style="padding-bottom: 5px;">
+        <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Filters
+        </button>
+      </div>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <div class="input-group">
+                <label class="input-group-text">Region</label>
+                <select class="form-select">
+                  <option selected>Select...</option>
+                  <option value="1">Kharkov</option>
+                  <option value="2">Kyiv</option>
+                  <option value="3">Lviv</option>
+                  <option value="4">Odesa</option>
+                  <option value="5">Kherson</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group">
+                <label class="input-group-text">City</label>
+                <select class="form-select">
+                  <option selected>Select...</option>
+                  <option value="1">Kharkov</option>
+                  <option value="2">Kyiv</option>
+                  <option value="3">Lviv</option>
+                  <option value="4">Odesa</option>
+                  <option value="5">Kherson</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-grid col-6 mx-auto">
+              <button type="submit" class="btn btn-warning">Filter search</button>
+            </div>   
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top: 5px;">
+    <div class="row row-cols-1 row-cols-md-2 g-3">
+      <div class="col">
+        <div class="card">
+          <div class="row g-1">
+            <div class="col-md-4">
+              <img src="img/none-pic-shelter.png" class="card-img-top">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">"House of Care"</h5>
+                <p class="card-text">Kharkiv region, Kharkiv city</p>
+                <a href="shelter-page.html" class="btn btn-primary">All animals of the shelter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/house-of-care.jpg" class="card-img-top">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">"The rescue"</h5>
+                <p class="card-text">Kyiv region, Kyiv city</p>
+                <a href="shelter-page.html" class="btn btn-primary">All animals of the shelter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/none-pic-shelter.png" class="card-img-top">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">"Friends of the Animals"</h5>
+                <p class="card-text">Lviv region, Lviv city</p>
+                <a href="shelter-page.html" class="btn btn-primary">All animals of the shelter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <nav style="padding-top: 10px;">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item disabled">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    <style>
+      .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      </style>
+
+  </body>
+</html>
